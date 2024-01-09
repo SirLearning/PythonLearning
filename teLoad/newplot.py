@@ -12,7 +12,7 @@ percentages = [count / total_counts * 100 for count in counts]
 fig, ax = plt.subplots()
 
 # 绘制条形图
-bars = ax.barh(categories, counts, color='blue')
+bars = ax.barh(categories, counts, color='#6780B6')
 
 # 添加标签，显示百分比
 for bar, count, percent in zip(bars, counts, percentages):
