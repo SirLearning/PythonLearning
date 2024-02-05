@@ -57,7 +57,7 @@ while (<SO>){
 	my ($so_name, $so_id, $so_alias) = (split /\s+/, $_, 3);
 	$so_alias =~ s/\s+//;
 	$SO{$so_name} = $so_id;
-	foreach my $alia ((split /,/, $so_alias)){
+	foreach my $alia ((split  /,/, $so_alias)){
 		$class{$alia} = $so_name;
 		}
 	}
